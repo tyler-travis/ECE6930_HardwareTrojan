@@ -129,6 +129,10 @@ The trojan is inserted at the Design and Fabrication stage.  It is assumed that 
 \end{figure}
 
 As mentioned previously, the effect of the trojan will be the leakage of secret information.  The trojan will be located on parts of the processor and well as some of the I/O such as the RS-232 signals.
+
+\subsection{Trojan Implementation}
+
+Once the trojan is triggered, the current key bit is sent to the UART module. Once the key bit is there it will either set the TX frame to have 1 stop bit if the key bit value is a 0 or to have 2 stop bits if the key bit value is a 1. Technically 8 bits are sent per ciphertext output, but the last frame is cut off so realistically, there are only 7 bits of data per ciphertext.
   
 \section{EXPERIMENTAL RESULTS}
 
@@ -151,7 +155,7 @@ The size of this trogan compared others is realitiviy small compared to the othe
 
 \subsection{Power}
 
-The power that was consumed by the trojan was a little bit more than other trojans in the class. This is probably due to the size of some of the components in the design.
+The power that was consumed by the trojan was a little bit more than other trojans in the class. This is probably due to the size of some of the components in the design. The power was measured using a shunt resistor in series with the ground pin of the FPGA by measuring the voltage drop over the resistor to find the current through it. The power can be found by taking the supply voltage and multiplying it by the current over the resistor.
 
  \begin{center}
     \begin{tabular}{| l | l | l | l | l |}
@@ -171,7 +175,7 @@ The detectability of the trojan is pretty low since the trojan is only activated
 
 \subsection{Measurements} 
 
-
+Eight measurements were taken from the TX pin from the FPGA. These 8 measurements show that key is leaked through the stop bit(s) of the UART frames. 
 
 The figures for the measurements are included in the appendix of this report.
 
