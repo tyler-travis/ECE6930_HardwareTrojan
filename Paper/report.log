@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.12.14)  6 MAY 2016 12:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.12.14)  6 MAY 2016 13:04
 entering extended mode
 **report.tex
 (report.tex
@@ -344,6 +344,29 @@ File: trojan.png Graphic file (type png)
  <use trojan.png>
 Package pdftex.def Info: trojan.png used on input line 127.
 (pdftex.def)             Requested size: 176.53409pt x 100.50021pt.
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+
+<SerialProg.png, id=14, 505.13719pt x 252.19218pt>
+File: SerialProg.png Graphic file (type png)
+ <use SerialProg.png>
+Package pdftex.def Info: SerialProg.png used on input line 139.
+(pdftex.def)             Requested size: 252.56798pt x 126.09578pt.
+
+Overfull \hbox (6.84987pt too wide) in paragraph at lines 139--140
+ [][] 
+ []
+
+
+Underfull \vbox (badness 4013) has occurred while \output is active []
+
 
 
 ** Conference Paper **
@@ -356,26 +379,24 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the US letter (8.5in X 11in) paper size.
 
-[2
-
- <./trojan.png>] (report.aux) ) 
+[2 <./trojan.png> <./SerialProg.png>] (report.aux) ) 
 Here is how much of TeX's memory you used:
- 3991 strings out of 493698
- 56193 string characters out of 3144408
+ 3996 strings out of 493698
+ 56282 string characters out of 3144408
  150757 words of memory out of 3000000
- 7292 multiletter control sequences out of 15000+200000
+ 7296 multiletter control sequences out of 15000+200000
  36949 words of font info for 72 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  27i,9n,49p,709b,303s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fon
-tname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/t
-imes/utmri8a.pfb>
-Output written on report.pdf (2 pages, 121597 bytes).
+{C:/Program Files/MiKTeX 2.
+9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utm
+b8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on report.pdf (2 pages, 126577 bytes).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
+ 37 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

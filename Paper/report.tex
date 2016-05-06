@@ -129,6 +129,16 @@ The trojan is inserted at the Design and Fabrication stage.  It is assumed that 
 \end{figure}
 
 As mentioned previously, the effect of the trojan will be the leakage of secret information.  The trojan will be located on parts of the processor and well as some of the I/O such as the RS-232 signals.
+
+\subsection{Serial Communication}
+
+A separate program was written in C to allow an interface for the user to input a desired plaintext to be encrypted.  The resulting cyphertext is sent over UART to the user.  The trojan is triggered when the plaintext of "0x70776e616765...” in hexadecimal or “pwnage” in ASCII is received.  The user interface of the crypto system is shown in Figure 3.
+
+\begin{figure}[thpb]
+	\centering
+	\includegraphics[scale=.50]{SerialProg}
+   \caption{The UI that allows the trigger to be sent.}
+\end{figure}
   
 \section{EXPERIMENTAL RESULTS}
 
