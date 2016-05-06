@@ -142,7 +142,9 @@ A separate program was written in C to allow an interface for the user to input 
   
 \section{EXPERIMENTAL RESULTS}
 
-The trojan worked as expected once everything was loaded onto the board. The spacing between the frames from the varying stop bits caused the bits for the key to be leaked out over 8 plain text inputs, with the first one being the triggering plaintext of "pwnage" or 0x7077.6e61.6765 in hex. The only part left to the person leaking the key is to brute force the remaining 8 bits left off by completed ciphertext outputs on the TX line of the FPGA. 
+The trojan worked as expected once everything was loaded onto the board. The spacing between the frames from the varying stop bits caused the bits for the key to be leaked out over 8 plain text inputs, with the first one being the triggering plaintext of "pwnage" or 0x7077.6e61.6765 in hex. The only part left to the person leaking the key is to brute force the remaining 8 bits left off by completed ciphertext outputs on the TX line of the FPGA.
+
+Since the authors were not able to get the 8051 IP core completely working on the Spartan 3E FPGA, the trojan and DES system were implemented directly on the FPGA.  The UART IP Core was obtained from www.fpga4fun.com and the DES IP Core was obtained from OpenCores.  The credit of these cores are found in the source code.
 
 \subsection{Size}
  
@@ -187,6 +189,9 @@ The figures for the measurements are included in the appendix of this report.
 
 \section{CONCLUSION}
 
+The trojan was successfully implemented on a Spartan 3E FPGA.  The trojan does not take up a lot of extra space and would be hard to detect when analyzing the floor plan.  The trojan also was able to maintain a low power profile.  The key can be reliably extracted from the UART Tx communication line and it would only be detected if the signal was analyzed with an oscilloscope after activation.  The probably of accidentally activating the trojan is low which would also hinder the ability to test and detect the trojan.
+
+The authors were not able to get the 8051 IP core working with a large DES code written in C.  The authors were able to learn a lot about microcontroller implementations on FPGAs and the time spent debugging the 8051 IP core was worth while. 
 
 \addtolength{\textheight}{-12cm}   % This command serves to balance the column lengths
                                   % on the last page of the document manually. It shortens
