@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.12.14)  6 MAY 2016 12:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.12.14)  6 MAY 2016 12:50
 entering extended mode
 **report.tex
 (report.tex
@@ -317,6 +317,33 @@ LaTeX Font Info:    ... okay on input line 62.
 \everyMPtoPDFconversion=\toks23
 )
 \c@lstlisting=\count127
+ <8051.png, id=1, 559.33969pt x 398.23781pt>
+File: 8051.png Graphic file (type png)
+ <use 8051.png>
+Package pdftex.def Info: 8051.png used on input line 97.
+(pdftex.def)             Requested size: 279.66916pt x 199.11841pt.
+
+Overfull \hbox (33.95105pt too wide) in paragraph at lines 97--98
+ [][] 
+ []
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 114.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 114.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+
+ <./8051.png>]
+<trojan.png, id=13, 353.06906pt x 201.00093pt>
+File: trojan.png Graphic file (type png)
+ <use trojan.png>
+Package pdftex.def Info: trojan.png used on input line 127.
+(pdftex.def)             Requested size: 176.53409pt x 100.50021pt.
 
 
 ** Conference Paper **
@@ -329,31 +356,26 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the US letter (8.5in X 11in) paper size.
 
+[2
 
-Overfull \vbox (336.63313pt too high) has occurred while \output is active []
-
-
-[1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
-
-
-
-] (report.aux) ) 
+ <./trojan.png>] (report.aux) ) 
 Here is how much of TeX's memory you used:
- 3952 strings out of 493698
- 55608 string characters out of 3144408
- 147757 words of memory out of 3000000
- 7269 multiletter control sequences out of 15000+200000
- 35250 words of font info for 64 fonts, out of 3000000 for 9000
+ 3991 strings out of 493698
+ 56193 string characters out of 3144408
+ 150757 words of memory out of 3000000
+ 7292 multiletter control sequences out of 15000+200000
+ 36949 words of font info for 72 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 27i,9n,49p,274b,303s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C
-:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/u
-tmri8a.pfb>
-Output written on report.pdf (1 page, 53155 bytes).
+ 27i,9n,49p,709b,303s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fon
+tname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/t
+imes/utmri8a.pfb>
+Output written on report.pdf (2 pages, 121597 bytes).
 PDF statistics:
- 23 PDF objects out of 1000 (max. 8388607)
+ 35 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
