@@ -139,6 +139,11 @@ A separate program was written in C to allow an interface for the user to input 
 	\includegraphics[scale=.50]{SerialProg}
    \caption{The UI that allows the trigger to be sent.}
 \end{figure}
+
+\subsection{Trojan Implementation}
+
+Once the trojan is triggered, the current key bit is sent to the UART module. Once the key bit is there it will either set the TX frame to have 1 stop bit if the key bit value is a 0 or to have 2 stop bits if the key bit value is a 1. Technically 8 bits are sent per ciphertext output, but the last frame is cut off so realistically, there are only 7 bits of data per ciphertext.
+
   
 \section{EXPERIMENTAL RESULTS}
 
@@ -163,7 +168,7 @@ The size of this trogan compared others is realitiviy small compared to the othe
 
 \subsection{Power}
 
-The power that was consumed by the trojan was a little bit more than other trojans in the class. This is probably due to the size of some of the components in the design.
+The power that was consumed by the trojan was a little bit more than other trojans in the class. This is probably due to the size of some of the components in the design. The power was measured using a shunt resistor in series with the ground pin of the FPGA by measuring the voltage drop over the resistor to find the current through it. The power can be found by taking the supply voltage and multiplying it by the current over the resistor.
 
  \begin{center}
     \begin{tabular}{| l | l | l | l | l |}
@@ -183,7 +188,7 @@ The detectability of the trojan is pretty low since the trojan is only activated
 
 \subsection{Measurements} 
 
-
+Eight measurements were taken from the TX pin from the FPGA. These 8 measurements show that key is leaked through the stop bit(s) of the UART frames. 
 
 The figures for the measurements are included in the appendix of this report.
 
@@ -222,11 +227,9 @@ The authors were not able to get the 8051 IP core working with a large DES code 
 
 \begin{thebibliography}{99}
 
-\bibitem{c1} T. Machida, D. Yamamoto, M. Iwamoto, K. Sakiyama. A New Mod of Operation for Arbiter PUF to Improve Uniqueness on FPGA. The University of Electro-Communications. Tokyo, Japan. 2014.
-\bibitem{c2} J. Orlin Grabbe. The DES Algorithm Illustrated. \emph{Laissez Faire City Times}, 2006.
-\bibitem{c3} T. Machida, D. Yamamoto, M. Iwamoto, K. Sakiyama. Implementation of Double Arbiter PUF and its Performance Evaluation on FPGA. The University of Electro-Communications. Tokyo, Japan. 2015.
-\bibitem{c4} M. Rostami, M. Majzoobi, F. Koushanfar, D. Wallach, S. Devadas. Robust and Reverse-Engineering Resilient PUF Authentication and Key-Exchange by Substring Matching. Rice University. Houston, Texas. January. 2014.
-\bibitem{c5} Martin Deutschmann. Cryptographic Applications with Physically Unclonable Functions. Alpen-Adria-Universit{\"a}t Klagenfurt. Klagenfurt. November. 2010.
+\bibitem{c1} M. Ganga and M. Hsiao, "A Novel Sustained Vector Technique for the Detection of Hardware Trojans", International Conference on VLSI Desgin, 2009.
+\bibitem{c2} A. Baumgarten, M. Clausman, B. Lindenmann, M. Steffen, B. Trotter and J. Zambreno, "Embedded Systems Challenge", 2008.
+\bibitem{c3} "8051 IP Core » Oregano Systems", Oreganosystems.at, 2016. [Online]. Available: http://www.oreganosystems.at/?page\_id=96. [Accessed: 06- May- 2016].
 
 \end{thebibliography}
 

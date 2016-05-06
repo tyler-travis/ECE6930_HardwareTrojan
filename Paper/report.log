@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.12.14)  6 MAY 2016 13:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.12.14)  6 MAY 2016 13:44
 entering extended mode
 **report.tex
 (report.tex
@@ -365,16 +365,19 @@ Overfull \hbox (6.84987pt too wide) in paragraph at lines 139--140
  []
 
 
-Overfull \hbox (25.23965pt too wide) in paragraph at lines 154--162
+Overfull \hbox (25.23965pt too wide) in paragraph at lines 159--167
  [] 
  []
 
 
-Overfull \hbox (44.10966pt too wide) in paragraph at lines 169--178
+Overfull \hbox (44.10966pt too wide) in paragraph at lines 174--183
  [] 
  []
 
 [2 <./trojan.png> <./SerialProg.png>]
+Missing character: There is no Â in font ptmr7t!
+Missing character: There is no » in font ptmr7t!
+
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -390,11 +393,11 @@ Before submitting the final camera ready copy, remember to:
 
 ] (report.aux) ) 
 Here is how much of TeX's memory you used:
- 3996 strings out of 493698
- 56282 string characters out of 3144408
+ 3993 strings out of 493698
+ 56277 string characters out of 3144408
  153757 words of memory out of 3000000
- 7296 multiletter control sequences out of 15000+200000
- 36949 words of font info for 72 fonts, out of 3000000 for 9000
+ 7294 multiletter control sequences out of 15000+200000
+ 35813 words of font info for 71 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  27i,9n,49p,709b,303s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C
@@ -403,7 +406,7 @@ Here is how much of TeX's memory you used:
 /fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
 /times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pf
 b>
-Output written on report.pdf (3 pages, 131032 bytes).
+Output written on report.pdf (3 pages, 131541 bytes).
 PDF statistics:
  40 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
