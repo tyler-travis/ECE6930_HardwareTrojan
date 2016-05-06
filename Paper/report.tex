@@ -142,13 +142,48 @@ A separate program was written in C to allow an interface for the user to input 
   
 \section{EXPERIMENTAL RESULTS}
 
+The trojan worked as expected once everything was loaded onto the board. The spacing between the frames from the varying stop bits caused the bits for the key to be leaked out over 8 plain text inputs, with the first one being the triggering plaintext of "pwnage" or 0x7077.6e61.6765 in hex. The only part left to the person leaking the key is to brute force the remaining 8 bits left off by completed ciphertext outputs on the TX line of the FPGA. 
+
 \subsection{Size}
+ 
+The size of this trogan compared others is realitiviy small compared to the other trojans in the class. With only a 6.2\% increase in look up tables (LUTs) at the worst, there isn't a lot of extra area used. Refer to Table xx for more information.
+
+ \begin{center}
+    \begin{tabular}{| l | l | l | l | l |}
+        \hline
+        & Original & With Trojan & Difference & Percentage \\ \hline
+        LUTs & 835 & 887 & 52 & 6.2\% \\ \hline
+        Slices & 562 & 587 & 25 & 4.4\% \\ \hline
+        Flip Flops & 451 & 467 & 16 & 3.5\% \\
+        \hline
+    \end{tabular}
+\end{center}
 
 \subsection{Power}
 
+The power that was consumed by the trojan was a little bit more than other trojans in the class. This is probably due to the size of some of the components in the design.
+
+ \begin{center}
+    \begin{tabular}{| l | l | l | l | l |}
+        \hline
+        & Original & With Trojan & Difference & Percentage \\ \hline
+        Volts (supply) & 5.5 & 5.5 & 0 & 0\% \\ \hline
+        Amps (supply) & 0.067 & 0.067 & 0 & 0\% \\ \hline
+        Volts (resistor) & 1.72mV & 1.84mV & 0.12mV & 6.9\% \\
+        Watts & 7.8mw & 8.4mW & 0.6mW & 7.69\% \\
+        \hline
+    \end{tabular}
+\end{center}
+
 \subsection{Detectability}
 
+The detectability of the trojan is pretty low since the trojan is only activated when a certain event triggers it. Therefore, the output of the device will stay consistent as long as the plaintext trigger isn't entered into the device. Once the trigger has been triggered, the device will leak the key through the next 8 UART frames for the attacker to use.
+
 \subsection{Measurements} 
+
+
+
+The figures for the measurements are included in the appendix of this report.
 
 \section{CONCLUSION}
 
