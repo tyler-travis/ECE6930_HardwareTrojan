@@ -1,0 +1,42 @@
+NET "L<0>" LOC = "J14";
+NET "L<1>" LOC = "J15";
+NET "L<2>" LOC = "K15";
+NET "L<3>" LOC = "K14";
+
+NET "L<4>" LOC = "E16";
+NET "L<5>" LOC = "P16";
+NET "L<6>" LOC = "E4";
+NET "L<7>" LOC = "P4";
+
+NET "RxD" LOC = "U6";
+NET "TxD" LOC = "P9";
+
+NET "SW0" LOC = "G18";
+
+NET "SW1" LOC = "H18";
+NET "SW2" LOC = "K18";
+NET "SW3" LOC = "K17";
+NET "SW4" LOC = "L14";
+
+NET "SW5" LOC = "L13";
+NET "SW6" LOC = "N17";
+NET "SW7" LOC = "R17";
+
+
+NET "clk" LOC = "B8"; #need clk pin
+NET "clk" PERIOD = 20ns;
+
+//NET "astb"  LOC = "F2"  ;
+//NET "dstb"  LOC = "F1"  ;
+
+//NET "pwr"  LOC = "C2"  ;
+//NET "pwait"  LOC = "D2"  ;
+
+//NET "pdb<0>" LOC = "N2"; # Bank = 2
+//NET "pdb<1>" LOC = "M2"; # Bank = 2
+//NET "pdb<2>" LOC = "M1"; # Bank = 3
+//NET "pdb<3>" LOC = "L1"; # Bank = 3
+//NET "pdb<4>" LOC = "L2"; # Bank = 3
+//NET "pdb<5>" LOC = "H2"; # Bank = 3
+//NET "pdb<6>" LOC = "H1"; # Bank = 3
+//NET "pdb<7>" LOC = "H3"; # Bank = 3

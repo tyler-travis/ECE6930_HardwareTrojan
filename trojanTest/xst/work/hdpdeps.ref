@@ -1,0 +1,8 @@
+V3 3
+FL C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/DES/des56.vhd 2005/10/15.01:55:54 P.20131013
+EN work/des56 1462500561 \
+      FL C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/DES/des56.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/des56/des 1462500562 \
+      FL C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/DES/des56.vhd \
+      EN work/des56 1462500561

@@ -1,0 +1,232 @@
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pufCon.ucf -p xc3s1200e-fg320-4 trojan.ngc trojan.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o trojan_map.ncd trojan.ngd trojan.pcf 
+par -w -intstyle ise -ol high -t 1 trojan_map.ncd trojan.ncd trojan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml trojan.twx trojan.ncd -o trojan.twr trojan.pcf -ucf pufCon.ucf 
+bitgen -intstyle ise -f trojan.ut trojan.ncd 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pufCon.ucf -p xc3s1200e-fg320-4 trojan.ngc trojan.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o trojan_map.ncd trojan.ngd trojan.pcf 
+par -w -intstyle ise -ol high -t 1 trojan_map.ncd trojan.ncd trojan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml trojan.twx trojan.ncd -o trojan.twr trojan.pcf -ucf pufCon.ucf 
+bitgen -intstyle ise -f trojan.ut trojan.ncd 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pufCon.ucf -p xc3s1200e-fg320-4 trojan.ngc trojan.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o trojan_map.ncd trojan.ngd trojan.pcf 
+par -w -intstyle ise -ol high -t 1 trojan_map.ncd trojan.ncd trojan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml trojan.twx trojan.ncd -o trojan.twr trojan.pcf -ucf pufCon.ucf 
+bitgen -intstyle ise -f trojan.ut trojan.ncd 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pufCon.ucf -p xc3s1200e-fg320-4 trojan.ngc trojan.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o trojan_map.ncd trojan.ngd trojan.pcf 
+par -w -intstyle ise -ol high -t 1 trojan_map.ncd trojan.ncd trojan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml trojan.twx trojan.ncd -o trojan.twr trojan.pcf -ucf pufCon.ucf 
+bitgen -intstyle ise -f trojan.ut trojan.ncd 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pufCon.ucf -p xc3s1200e-fg320-4 trojan.ngc trojan.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o trojan_map.ncd trojan.ngd trojan.pcf 
+par -w -intstyle ise -ol high -t 1 trojan_map.ncd trojan.ncd trojan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml trojan.twx trojan.ncd -o trojan.twr trojan.pcf -ucf pufCon.ucf 
+bitgen -intstyle ise -f trojan.ut trojan.ncd 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pufCon.ucf -p xc3s1200e-fg320-4 trojan.ngc trojan.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o trojan_map.ncd trojan.ngd trojan.pcf 
+par -w -intstyle ise -ol high -t 1 trojan_map.ncd trojan.ncd trojan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml trojan.twx trojan.ncd -o trojan.twr trojan.pcf -ucf pufCon.ucf 
+bitgen -intstyle ise -f trojan.ut trojan.ncd 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pufCon.ucf -p xc3s1200e-fg320-4 trojan.ngc trojan.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o trojan_map.ncd trojan.ngd trojan.pcf 
+par -w -intstyle ise -ol high -t 1 trojan_map.ncd trojan.ncd trojan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml trojan.twx trojan.ncd -o trojan.twr trojan.pcf -ucf pufCon.ucf 
+bitgen -intstyle ise -f trojan.ut trojan.ncd 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pufCon.ucf -p xc3s1200e-fg320-4 trojan.ngc trojan.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o trojan_map.ncd trojan.ngd trojan.pcf 
+par -w -intstyle ise -ol high -t 1 trojan_map.ncd trojan.ncd trojan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml trojan.twx trojan.ncd -o trojan.twr trojan.pcf -ucf pufCon.ucf 
+bitgen -intstyle ise -f trojan.ut trojan.ncd 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pufCon.ucf -p xc3s1200e-fg320-4 trojan.ngc trojan.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o trojan_map.ncd trojan.ngd trojan.pcf 
+par -w -intstyle ise -ol high -t 1 trojan_map.ncd trojan.ncd trojan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml trojan.twx trojan.ncd -o trojan.twr trojan.pcf -ucf pufCon.ucf 
+bitgen -intstyle ise -f trojan.ut trojan.ncd 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pufCon.ucf -p xc3s1200e-fg320-4 trojan.ngc trojan.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o trojan_map.ncd trojan.ngd trojan.pcf 
+par -w -intstyle ise -ol high -t 1 trojan_map.ncd trojan.ncd trojan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml trojan.twx trojan.ncd -o trojan.twr trojan.pcf -ucf pufCon.ucf 
+bitgen -intstyle ise -f trojan.ut trojan.ncd 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pufCon.ucf -p xc3s1200e-fg320-4 trojan.ngc trojan.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o trojan_map.ncd trojan.ngd trojan.pcf 
+par -w -intstyle ise -ol high -t 1 trojan_map.ncd trojan.ncd trojan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml trojan.twx trojan.ncd -o trojan.twr trojan.pcf -ucf pufCon.ucf 
+bitgen -intstyle ise -f trojan.ut trojan.ncd 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pufCon.ucf -p xc3s1200e-fg320-4 trojan.ngc trojan.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o trojan_map.ncd trojan.ngd trojan.pcf 
+par -w -intstyle ise -ol high -t 1 trojan_map.ncd trojan.ncd trojan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml trojan.twx trojan.ncd -o trojan.twr trojan.pcf -ucf pufCon.ucf 
+bitgen -intstyle ise -f trojan.ut trojan.ncd 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pufCon.ucf -p xc3s1200e-fg320-4 trojan.ngc trojan.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o trojan_map.ncd trojan.ngd trojan.pcf 
+par -w -intstyle ise -ol high -t 1 trojan_map.ncd trojan.ncd trojan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml trojan.twx trojan.ncd -o trojan.twr trojan.pcf -ucf pufCon.ucf 
+bitgen -intstyle ise -f trojan.ut trojan.ncd 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pufCon.ucf -p xc3s1200e-fg320-4 trojan.ngc trojan.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o trojan_map.ncd trojan.ngd trojan.pcf 
+par -w -intstyle ise -ol high -t 1 trojan_map.ncd trojan.ncd trojan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml trojan.twx trojan.ncd -o trojan.twr trojan.pcf -ucf pufCon.ucf 
+bitgen -intstyle ise -f trojan.ut trojan.ncd 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pufCon.ucf -p xc3s1200e-fg320-4 trojan.ngc trojan.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o trojan_map.ncd trojan.ngd trojan.pcf 
+par -w -intstyle ise -ol high -t 1 trojan_map.ncd trojan.ncd trojan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml trojan.twx trojan.ncd -o trojan.twr trojan.pcf -ucf pufCon.ucf 
+bitgen -intstyle ise -f trojan.ut trojan.ncd 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pufCon.ucf -p xc3s1200e-fg320-4 trojan.ngc trojan.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o trojan_map.ncd trojan.ngd trojan.pcf 
+par -w -intstyle ise -ol high -t 1 trojan_map.ncd trojan.ncd trojan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml trojan.twx trojan.ncd -o trojan.twr trojan.pcf -ucf pufCon.ucf 
+bitgen -intstyle ise -f trojan.ut trojan.ncd 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pufCon.ucf -p xc3s1200e-fg320-4 trojan.ngc trojan.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o trojan_map.ncd trojan.ngd trojan.pcf 
+par -w -intstyle ise -ol high -t 1 trojan_map.ncd trojan.ncd trojan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml trojan.twx trojan.ncd -o trojan.twr trojan.pcf -ucf pufCon.ucf 
+bitgen -intstyle ise -f trojan.ut trojan.ncd 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pufCon.ucf -p xc3s1200e-fg320-4 trojan.ngc trojan.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o trojan_map.ncd trojan.ngd trojan.pcf 
+par -w -intstyle ise -ol high -t 1 trojan_map.ncd trojan.ncd trojan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml trojan.twx trojan.ncd -o trojan.twr trojan.pcf -ucf pufCon.ucf 
+bitgen -intstyle ise -f trojan.ut trojan.ncd 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pufCon.ucf -p xc3s1200e-fg320-4 trojan.ngc trojan.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o trojan_map.ncd trojan.ngd trojan.pcf 
+par -w -intstyle ise -ol high -t 1 trojan_map.ncd trojan.ncd trojan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml trojan.twx trojan.ncd -o trojan.twr trojan.pcf -ucf pufCon.ucf 
+bitgen -intstyle ise -f trojan.ut trojan.ncd 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pufCon.ucf -p xc3s1200e-fg320-4 trojan.ngc trojan.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o trojan_map.ncd trojan.ngd trojan.pcf 
+par -w -intstyle ise -ol high -t 1 trojan_map.ncd trojan.ncd trojan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml trojan.twx trojan.ncd -o trojan.twr trojan.pcf -ucf pufCon.ucf 
+bitgen -intstyle ise -f trojan.ut trojan.ncd 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pufCon.ucf -p xc3s1200e-fg320-4 trojan.ngc trojan.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o trojan_map.ncd trojan.ngd trojan.pcf 
+par -w -intstyle ise -ol high -t 1 trojan_map.ncd trojan.ncd trojan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml trojan.twx trojan.ncd -o trojan.twr trojan.pcf -ucf pufCon.ucf 
+bitgen -intstyle ise -f trojan.ut trojan.ncd 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pufCon.ucf -p xc3s1200e-fg320-4 trojan.ngc trojan.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o trojan_map.ncd trojan.ngd trojan.pcf 
+par -w -intstyle ise -ol high -t 1 trojan_map.ncd trojan.ncd trojan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml trojan.twx trojan.ncd -o trojan.twr trojan.pcf -ucf pufCon.ucf 
+bitgen -intstyle ise -f trojan.ut trojan.ncd 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pufCon.ucf -p xc3s1200e-fg320-4 trojan.ngc trojan.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o trojan_map.ncd trojan.ngd trojan.pcf 
+par -w -intstyle ise -ol high -t 1 trojan_map.ncd trojan.ncd trojan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml trojan.twx trojan.ncd -o trojan.twr trojan.pcf -ucf pufCon.ucf 
+bitgen -intstyle ise -f trojan.ut trojan.ncd 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pufCon.ucf -p xc3s1200e-fg320-4 trojan.ngc trojan.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o trojan_map.ncd trojan.ngd trojan.pcf 
+par -w -intstyle ise -ol high -t 1 trojan_map.ncd trojan.ncd trojan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml trojan.twx trojan.ncd -o trojan.twr trojan.pcf -ucf pufCon.ucf 
+bitgen -intstyle ise -f trojan.ut trojan.ncd 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pufCon.ucf -p xc3s1200e-fg320-4 trojan.ngc trojan.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o trojan_map.ncd trojan.ngd trojan.pcf 
+par -w -intstyle ise -ol high -t 1 trojan_map.ncd trojan.ncd trojan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml trojan.twx trojan.ncd -o trojan.twr trojan.pcf -ucf pufCon.ucf 
+bitgen -intstyle ise -f trojan.ut trojan.ncd 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pufCon.ucf -p xc3s1200e-fg320-4 trojan.ngc trojan.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o trojan_map.ncd trojan.ngd trojan.pcf 
+par -w -intstyle ise -ol high -t 1 trojan_map.ncd trojan.ncd trojan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml trojan.twx trojan.ncd -o trojan.twr trojan.pcf -ucf pufCon.ucf 
+bitgen -intstyle ise -f trojan.ut trojan.ncd 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pufCon.ucf -p xc3s1200e-fg320-4 trojan.ngc trojan.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o trojan_map.ncd trojan.ngd trojan.pcf 
+par -w -intstyle ise -ol high -t 1 trojan_map.ncd trojan.ncd trojan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml trojan.twx trojan.ncd -o trojan.twr trojan.pcf -ucf pufCon.ucf 
+bitgen -intstyle ise -f trojan.ut trojan.ncd 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pufCon.ucf -p xc3s1200e-fg320-4 trojan.ngc trojan.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o trojan_map.ncd trojan.ngd trojan.pcf 
+par -w -intstyle ise -ol high -t 1 trojan_map.ncd trojan.ncd trojan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml trojan.twx trojan.ncd -o trojan.twr trojan.pcf -ucf pufCon.ucf 
+bitgen -intstyle ise -f trojan.ut trojan.ncd 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pufCon.ucf -p xc3s1200e-fg320-4 trojan.ngc trojan.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o trojan_map.ncd trojan.ngd trojan.pcf 
+par -w -intstyle ise -ol high -t 1 trojan_map.ncd trojan.ncd trojan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml trojan.twx trojan.ncd -o trojan.twr trojan.pcf -ucf pufCon.ucf 
+bitgen -intstyle ise -f trojan.ut trojan.ncd 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pufCon.ucf -p xc3s1200e-fg320-4 trojan.ngc trojan.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o trojan_map.ncd trojan.ngd trojan.pcf 
+par -w -intstyle ise -ol high -t 1 trojan_map.ncd trojan.ncd trojan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml trojan.twx trojan.ncd -o trojan.twr trojan.pcf -ucf pufCon.ucf 
+bitgen -intstyle ise -f trojan.ut trojan.ncd 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pufCon.ucf -p xc3s1200e-fg320-4 trojan.ngc trojan.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o trojan_map.ncd trojan.ngd trojan.pcf 
+par -w -intstyle ise -ol high -t 1 trojan_map.ncd trojan.ncd trojan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml trojan.twx trojan.ncd -o trojan.twr trojan.pcf -ucf pufCon.ucf 
+bitgen -intstyle ise -f trojan.ut trojan.ncd 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pufCon.ucf -p xc3s1200e-fg320-4 trojan.ngc trojan.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o trojan_map.ncd trojan.ngd trojan.pcf 
+par -w -intstyle ise -ol high -t 1 trojan_map.ncd trojan.ncd trojan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml trojan.twx trojan.ncd -o trojan.twr trojan.pcf -ucf pufCon.ucf 
+bitgen -intstyle ise -f trojan.ut trojan.ncd 
+xst -intstyle ise -ifn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.xst" -ofn "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/trojan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pufCon.ucf -p xc3s1200e-fg320-4 trojan.ngc trojan.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o trojan_map.ncd trojan.ngd trojan.pcf 
+par -w -intstyle ise -ol high -t 1 trojan_map.ncd trojan.ncd trojan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml trojan.twx trojan.ncd -o trojan.twr trojan.pcf -ucf pufCon.ucf 
+bitgen -intstyle ise -f trojan.ut trojan.ncd 

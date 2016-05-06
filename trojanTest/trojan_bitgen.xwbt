@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Justin\Documents\ECE-HW-Security\FinalProject\fpgaCode\trojanTest\trojan.ncd
+OUTFILE=C:\Users\Justin\Documents\ECE-HW-Security\FinalProject\fpgaCode\trojanTest\trojan.bit
+FAMILY=Spartan3E
+PART=xc3s1200e-4fg320
+WORKINGDIR=C:\Users\Justin\Documents\ECE-HW-Security\FinalProject\fpgaCode\trojanTest
+LICENSE=WebPack
+USER_INFO=211152336_0_0_659

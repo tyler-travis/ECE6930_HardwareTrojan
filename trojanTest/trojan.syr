@@ -1,0 +1,770 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: trojan.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "trojan.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "trojan"
+Output Format                      : NGC
+Target Device                      : xc3s1200e-4-fg320
+
+---- Source Options
+Top Module Name                    : trojan
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/DES/des56.vhd" in Library work.
+Architecture des of Entity des56 is up to date.
+Compiling verilog file "async.v" in library work
+Module <async_transmitter> compiled
+Module <async_receiver> compiled
+Module <ASSERTION_ERROR> compiled
+Compiling verilog file "trojan.v" in library work
+Module <BaudTickGen> compiled
+Module <trojan> compiled
+No errors in compilation
+Analysis of file <"trojan.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <trojan> in library <work>.
+
+Analyzing hierarchy for entity <des56> in library <work> (architecture <des>).
+
+Analyzing hierarchy for module <async_receiver> in library <work> with parameters.
+	Baud = "00000000000000000010010110000000"
+	ClkFrequency = "00000010111110101111000010000000"
+	Oversampling = "00000000000000000000000000001000"
+	l2o = "00000000000000000000000000000100"
+
+Analyzing hierarchy for module <async_transmitter> in library <work> with parameters.
+	Baud = "00000000000000000010010110000000"
+	ClkFrequency = "00000010111110101111000010000000"
+
+Analyzing hierarchy for module <BaudTickGen> in library <work> with parameters.
+	AccWidth = "00000000000000000000000000010101"
+	Baud = "00000000000000000010010110000000"
+	ClkFrequency = "00000010111110101111000010000000"
+	Inc = "00000000000000000000110010010101"
+	Oversampling = "00000000000000000000000000001000"
+	ShiftLimiter = "00000000000000000000000000000111"
+
+Analyzing hierarchy for module <BaudTickGen> in library <work> with parameters.
+	AccWidth = "00000000000000000000000000010101"
+	Baud = "00000000000000000010010110000000"
+	ClkFrequency = "00000010111110101111000010000000"
+	Inc = "00000000000000000000000110010011"
+	Oversampling = "00000000000000000000000000000001"
+	ShiftLimiter = "00000000000000000000000000000100"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <trojan>.
+INFO:Xst:1433 - Contents of array <cypherText_Reg> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <cypherText_Reg> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <cypherText_Reg> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <cypherText_Reg> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <cypherText_Reg> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <cypherText_Reg> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <cypherText_Reg> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <cypherText_Reg> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Module <trojan> is correct for synthesis.
+ 
+Analyzing Entity <des56> in library <work> (Architecture <des>).
+Entity <des56> analyzed. Unit <des56> generated.
+
+Analyzing module <async_receiver> in library <work>.
+	Baud = 32'sb00000000000000000010010110000000
+	ClkFrequency = 32'sb00000010111110101111000010000000
+	Oversampling = 32'sb00000000000000000000000000001000
+	l2o = 32'sb00000000000000000000000000000100
+	Calling function <log2>.
+Module <async_receiver> is correct for synthesis.
+ 
+Analyzing module <BaudTickGen.1> in library <work>.
+	AccWidth = 32'sb00000000000000000000000000010101
+	Baud = 32'sb00000000000000000010010110000000
+	ClkFrequency = 32'sb00000010111110101111000010000000
+	Inc = 32'sb00000000000000000000110010010101
+	Oversampling = 32'sb00000000000000000000000000001000
+	ShiftLimiter = 32'sb00000000000000000000000000000111
+Module <BaudTickGen.1> is correct for synthesis.
+ 
+Analyzing module <async_transmitter> in library <work>.
+	Baud = 32'sb00000000000000000010010110000000
+	ClkFrequency = 32'sb00000010111110101111000010000000
+Module <async_transmitter> is correct for synthesis.
+ 
+Analyzing module <BaudTickGen.2> in library <work>.
+	AccWidth = 32'sb00000000000000000000000000010101
+	Baud = 32'sb00000000000000000010010110000000
+	ClkFrequency = 32'sb00000010111110101111000010000000
+	Inc = 32'sb00000000000000000000000110010011
+	Oversampling = 32'sb00000000000000000000000000000001
+	ShiftLimiter = 32'sb00000000000000000000000000000100
+Module <BaudTickGen.2> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <des56>.
+    Related source file is "C:/Users/Justin/Documents/ECE-HW-Security/FinalProject/fpgaCode/trojanTest/DES/des56.vhd".
+WARNING:Xst:647 - Input <inkey<7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <inkey<15>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <inkey<23>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <inkey<31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <inkey<39>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <inkey<47>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <inkey<55>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <inkey<63>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <mycounter> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <keylr<8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <keylr<17>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <keylr<21>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <keylr<24>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <keylr<34>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <keylr<37>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <keylr<42>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <keylr<53>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <f> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <decrypt> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <d> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <countdown> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 64x4-bit ROM for signal <s1>.
+    Found 64x4-bit ROM for signal <s2>.
+    Found 64x4-bit ROM for signal <s3>.
+    Found 64x4-bit ROM for signal <s4>.
+    Found 64x4-bit ROM for signal <s5>.
+    Found 64x4-bit ROM for signal <s6>.
+    Found 64x4-bit ROM for signal <s7>.
+    Found 64x4-bit ROM for signal <s8>.
+    Found 64-bit register for signal <outdata>.
+    Found 1-bit register for signal <rdy_next_next_cycle>.
+    Found 1-bit register for signal <rdy_next_cycle>.
+    Found 1-bit register for signal <rdy>.
+    Found 6-bit xor2 for signal <b1>.
+    Found 6-bit xor2 for signal <b2>.
+    Found 6-bit xor2 for signal <b3>.
+    Found 6-bit xor2 for signal <b4>.
+    Found 6-bit xor2 for signal <b5>.
+    Found 6-bit xor2 for signal <b6>.
+    Found 6-bit xor2 for signal <b7>.
+    Found 6-bit xor2 for signal <b8>.
+    Found 5-bit register for signal <countup>.
+    Found 5-bit adder for signal <countup$addsub0000>.
+    Found 64-bit register for signal <inmsg>.
+    Found 28-bit register for signal <key_l>.
+    Found 28-bit register for signal <key_r>.
+    Found 32-bit xor2 for signal <outmsg<32:63>>.
+    Found 5-bit comparator less for signal <rdy_next_next_cycle$cmp_lt0000> created at line 444.
+    Found 5-bit comparator less for signal <rdy_next_next_cycle$cmp_lt0001> created at line 448.
+    Found 1-bit register for signal <ready>.
+    Summary:
+	inferred   8 ROM(s).
+	inferred 193 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <des56> synthesized.
+
+
+Synthesizing Unit <BaudTickGen_1>.
+    Related source file is "async.v".
+    Found 22-bit register for signal <Acc>.
+    Found 21-bit adder carry out for signal <Acc$addsub0000> created at line 197.
+    Summary:
+	inferred  22 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <BaudTickGen_1> synthesized.
+
+
+Synthesizing Unit <BaudTickGen_2>.
+    Related source file is "async.v".
+    Found 22-bit register for signal <Acc>.
+    Found 21-bit adder carry out for signal <Acc$addsub0000> created at line 197.
+    Summary:
+	inferred  22 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <BaudTickGen_2> synthesized.
+
+
+Synthesizing Unit <async_receiver>.
+    Related source file is "async.v".
+    Found finite state machine <FSM_0> for signal <RxD_state>.
+    -----------------------------------------------------------------------
+    | States             | 11                                             |
+    | Transitions        | 22                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 11                                             |
+    | Clock              | clk                       (rising_edge)        |
+    | Power Up State     | 0000                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <RxD_data>.
+    Found 1-bit register for signal <RxD_endofpacket>.
+    Found 1-bit register for signal <RxD_data_ready>.
+    Found 2-bit updown counter for signal <Filter_cnt>.
+    Found 6-bit up counter for signal <GapCnt>.
+    Found 3-bit up counter for signal <OversamplingCnt>.
+    Found 1-bit register for signal <RxD_bit>.
+    Found 1-bit 4-to-1 multiplexer for signal <RxD_bit$mux0000>.
+    Found 2-bit register for signal <RxD_sync>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   3 Counter(s).
+	inferred  13 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <async_receiver> synthesized.
+
+
+Synthesizing Unit <async_transmitter>.
+    Related source file is "async.v".
+    Found finite state machine <FSM_1> for signal <TxD_state>.
+    -----------------------------------------------------------------------
+    | States             | 12                                             |
+    | Transitions        | 24                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 11                                             |
+    | Clock              | clk                       (rising_edge)        |
+    | Power Up State     | 0000                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <TxD_shift>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   8 D-type flip-flop(s).
+Unit <async_transmitter> synthesized.
+
+
+Synthesizing Unit <trojan>.
+    Related source file is "trojan.v".
+WARNING:Xst:1780 - Signal <ready_reg> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <ready> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <rdy_next_next_cycle> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <rdy_next_cycle> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <key> is used but never assigned. This sourceless signal will be automatically connected to value 0110101001100101011110000110101001100101011110000110101001100101.
+WARNING:Xst:653 - Signal <decrypt> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+    Found 8-bit register for signal <L>.
+    Found 1-bit 64-to-1 multiplexer for signal <$varindex0000> created at line 118.
+    Found 1-bit 64-to-1 multiplexer for signal <$varindex0001> created at line 119.
+    Found 1-bit 64-to-1 multiplexer for signal <$varindex0002> created at line 120.
+    Found 1-bit 64-to-1 multiplexer for signal <$varindex0003> created at line 121.
+    Found 1-bit 64-to-1 multiplexer for signal <$varindex0004> created at line 122.
+    Found 1-bit 64-to-1 multiplexer for signal <$varindex0005> created at line 123.
+    Found 1-bit 64-to-1 multiplexer for signal <$varindex0006> created at line 124.
+    Found 1-bit 64-to-1 multiplexer for signal <$varindex0007> created at line 125.
+    Found 7-bit up accumulator for signal <bitsSent>.
+    Found 7-bit comparator less for signal <bitsSent$cmp_lt0000> created at line 133.
+    Found 7-bit adder carry out for signal <COND_10$addsub0000>.
+    Found 7-bit adder carry out for signal <COND_11$addsub0000>.
+    Found 7-bit adder carry out for signal <COND_12$addsub0000>.
+    Found 7-bit adder carry out for signal <COND_13$addsub0000>.
+    Found 7-bit adder carry out for signal <COND_14$addsub0000>.
+    Found 7-bit adder carry out for signal <COND_15$addsub0000>.
+    Found 7-bit adder carry out for signal <COND_9$addsub0000>.
+    Found 64-bit register for signal <cypherText_Reg>.
+    Found 1-bit register for signal <ds_reg>.
+    Found 1-bit register for signal <encryptFreg>.
+    Found 10-bit register for signal <iter>.
+    Found 10-bit register for signal <iterNext>.
+    Found 10-bit adder for signal <iterNext$addsub0000> created at line 109.
+    Found 7-bit comparator greater for signal <iterNext$cmp_gt0000> created at line 108.
+    Found 10-bit comparator lessequal for signal <iterNext$cmp_le0000> created at line 108.
+    Found 7-bit comparator less for signal <iterNext$cmp_lt0000> created at line 117.
+    Found 7-bit register for signal <numBits>.
+    Found 7-bit comparator less for signal <numBits$cmp_lt0000> created at line 133.
+    Found 7-bit adder for signal <old_bitsSent_16$add0000> created at line 132.
+    Found 7-bit adder for signal <old_numBits_8$addsub0000> created at line 93.
+    Found 64-bit register for signal <plainText_Reg>.
+    Found 1-bit register for signal <reset_reg>.
+    Found 8-bit register for signal <TxD_data_Reg>.
+    Found 1-bit register for signal <TxD_start_Reg>.
+    Summary:
+	inferred   1 Accumulator(s).
+	inferred 175 D-type flip-flop(s).
+	inferred  10 Adder/Subtractor(s).
+	inferred   5 Comparator(s).
+	inferred   8 Multiplexer(s).
+Unit <trojan> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 8
+ 64x4-bit ROM                                          : 8
+# Adders/Subtractors                                   : 13
+ 10-bit adder                                          : 1
+ 21-bit adder carry out                                : 2
+ 5-bit adder                                           : 1
+ 7-bit adder                                           : 2
+ 7-bit adder carry out                                 : 7
+# Counters                                             : 3
+ 2-bit updown counter                                  : 1
+ 3-bit up counter                                      : 1
+ 6-bit up counter                                      : 1
+# Accumulators                                         : 1
+ 7-bit up accumulator                                  : 1
+# Registers                                            : 105
+ 1-bit register                                        : 91
+ 10-bit register                                       : 2
+ 2-bit register                                        : 1
+ 22-bit register                                       : 2
+ 28-bit register                                       : 2
+ 5-bit register                                        : 1
+ 64-bit register                                       : 3
+ 7-bit register                                        : 1
+ 8-bit register                                        : 2
+# Comparators                                          : 7
+ 10-bit comparator lessequal                           : 1
+ 5-bit comparator less                                 : 2
+ 7-bit comparator greater                              : 1
+ 7-bit comparator less                                 : 3
+# Multiplexers                                         : 9
+ 1-bit 4-to-1 multiplexer                              : 1
+ 1-bit 64-to-1 multiplexer                             : 8
+# Xors                                                 : 40
+ 1-bit xor2                                            : 32
+ 6-bit xor2                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <TX/TxD_state/FSM> on signal <TxD_state[1:4]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0100  | 0001
+ 1000  | 0010
+ 1001  | 0011
+ 1010  | 0100
+ 1011  | 0101
+ 1100  | 0110
+ 1101  | 0111
+ 1110  | 1000
+ 1111  | 1001
+ 0010  | 1010
+ 0011  | 1011
+-------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <RX/RxD_state/FSM> on signal <RxD_state[1:11]> with one-hot encoding.
+----------------------
+ State | Encoding
+----------------------
+ 0000  | 00000000001
+ 0001  | 00000000010
+ 1000  | 00000000100
+ 1001  | 00000001000
+ 1010  | 00000010000
+ 1011  | 00000100000
+ 1100  | 00001000000
+ 1101  | 00010000000
+ 1110  | 00100000000
+ 1111  | 01000000000
+ 0010  | 10000000000
+----------------------
+WARNING:Xst:1426 - The value init of the FF/Latch encryptFreg hinder the constant cleaning in the block trojan.
+   You should achieve better results by setting this init to 1.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 2
+# ROMs                                                 : 8
+ 64x4-bit ROM                                          : 8
+# Adders/Subtractors                                   : 13
+ 10-bit adder                                          : 1
+ 21-bit adder carry out                                : 2
+ 5-bit adder                                           : 1
+ 7-bit adder                                           : 2
+ 7-bit adder carry out                                 : 7
+# Counters                                             : 3
+ 2-bit updown counter                                  : 1
+ 3-bit up counter                                      : 1
+ 6-bit up counter                                      : 1
+# Accumulators                                         : 1
+ 7-bit up accumulator                                  : 1
+# Registers                                            : 433
+ Flip-Flops                                            : 433
+# Comparators                                          : 7
+ 10-bit comparator lessequal                           : 1
+ 5-bit comparator less                                 : 2
+ 7-bit comparator greater                              : 1
+ 7-bit comparator less                                 : 3
+# Multiplexers                                         : 8
+ 1-bit 64-to-1 multiplexer                             : 8
+# Xors                                                 : 40
+ 1-bit xor2                                            : 32
+ 6-bit xor2                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch encryptFreg hinder the constant cleaning in the block trojan.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <bitsSent_0> has a constant value of 0 in block <trojan>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <bitsSent_1> has a constant value of 0 in block <trojan>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <trojan> ...
+WARNING:Xst:1293 - FF/Latch <numBits_0> has a constant value of 0 in block <trojan>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <numBits_1> has a constant value of 0 in block <trojan>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <numBits_2> has a constant value of 0 in block <trojan>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <des56> ...
+
+Optimizing unit <BaudTickGen_1> ...
+
+Optimizing unit <BaudTickGen_2> ...
+
+Optimizing unit <async_receiver> ...
+
+Optimizing unit <async_transmitter> ...
+WARNING:Xst:2677 - Node <DES/rdy_next_cycle> of sequential type is unconnected in block <trojan>.
+WARNING:Xst:2677 - Node <DES/rdy_next_next_cycle> of sequential type is unconnected in block <trojan>.
+WARNING:Xst:2677 - Node <RX/GapCnt_5> of sequential type is unconnected in block <trojan>.
+WARNING:Xst:2677 - Node <RX/GapCnt_4> of sequential type is unconnected in block <trojan>.
+WARNING:Xst:2677 - Node <RX/GapCnt_3> of sequential type is unconnected in block <trojan>.
+WARNING:Xst:2677 - Node <RX/GapCnt_2> of sequential type is unconnected in block <trojan>.
+WARNING:Xst:2677 - Node <RX/GapCnt_1> of sequential type is unconnected in block <trojan>.
+WARNING:Xst:2677 - Node <RX/GapCnt_0> of sequential type is unconnected in block <trojan>.
+WARNING:Xst:2677 - Node <RX/RxD_endofpacket> of sequential type is unconnected in block <trojan>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block trojan, actual ratio is 5.
+
+Final Macro Processing ...
+
+Processing Unit <trojan> :
+	Found 2-bit shift register for signal <RX/RxD_sync_1>.
+Unit <trojan> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 450
+ Flip-Flops                                            : 450
+# Shift Registers                                      : 1
+ 2-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : trojan.ngr
+Top Level Output File Name         : trojan
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 19
+
+Cell Usage :
+# BELS                             : 1406
+#      GND                         : 1
+#      INV                         : 17
+#      LUT1                        : 296
+#      LUT2                        : 73
+#      LUT2_D                      : 9
+#      LUT2_L                      : 1
+#      LUT3                        : 241
+#      LUT3_D                      : 2
+#      LUT3_L                      : 1
+#      LUT4                        : 319
+#      LUT4_D                      : 5
+#      LUT4_L                      : 2
+#      MUXCY                       : 51
+#      MUXF5                       : 223
+#      MUXF6                       : 64
+#      MUXF7                       : 32
+#      MUXF8                       : 16
+#      VCC                         : 1
+#      XORCY                       : 52
+# FlipFlops/Latches                : 451
+#      FD                          : 133
+#      FDC                         : 1
+#      FDCE                        : 5
+#      FDE                         : 231
+#      FDPE                        : 1
+#      FDR                         : 1
+#      FDRE                        : 9
+#      FDS                         : 70
+# Shift Registers                  : 1
+#      SRL16E                      : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 18
+#      IBUF                        : 9
+#      OBUF                        : 9
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1200efg320-4 
+
+ Number of Slices:                      511  out of   8672     5%  
+ Number of Slice Flip Flops:            451  out of  17344     2%  
+ Number of 4 input LUTs:                967  out of  17344     5%  
+    Number used as logic:               966
+    Number used as Shift registers:       1
+ Number of IOs:                          19
+ Number of bonded IOBs:                  19  out of    250     7%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 387   |
+DES/rdy1                           | BUFG                   | 65    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset_reg(reset_reg:Q)             | NONE(DES/countup_0)    | 7     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 8.117ns (Maximum Frequency: 123.198MHz)
+   Minimum input arrival time before clock: 8.451ns
+   Maximum output required time after clock: 6.303ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 8.117ns (frequency: 123.198MHz)
+  Total number of paths / destination ports: 7371 / 712
+-------------------------------------------------------------------------
+Delay:               8.117ns (Levels of Logic = 4)
+  Source:            iter_5 (FF)
+  Destination:       iterNext_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: iter_5 to iterNext_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               6   0.591   0.844  iter_5 (iter_5)
+     LUT2:I0->O            1   0.704   0.424  TxD_data_Reg_0_and00001_SW0_SW0 (N142)
+     LUT4:I3->O           13   0.704   1.018  TxD_data_Reg_0_and00001 (N17)
+     LUT3:I2->O           13   0.704   0.987  TxD_start_Reg_cmp_eq00001 (TxD_start_Reg_cmp_eq0000)
+     LUT4:I3->O           10   0.704   0.882  iterNext_not0001107 (iterNext_not0001)
+     FDE:CE                    0.555          iterNext_0
+    ----------------------------------------
+    Total                      8.117ns (3.962ns logic, 4.155ns route)
+                                       (48.8% logic, 51.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 729 / 17
+-------------------------------------------------------------------------
+Offset:              8.451ns (Levels of Logic = 6)
+  Source:            SW6 (PAD)
+  Destination:       L_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: SW6 to L_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.218   0.844  SW6_IBUF (SW6_IBUF)
+     LUT4:I0->O            3   0.704   0.610  L_0_and000311 (N21)
+     LUT4:I1->O            8   0.704   0.932  L_0_and00041 (L_0_and0004)
+     LUT4:I0->O            1   0.704   0.595  L_7_mux000026 (L_7_mux000026)
+     LUT4:I0->O            1   0.704   0.424  L_7_mux000028 (L_7_mux000028)
+     LUT4:I3->O            1   0.704   0.000  L_7_mux0000481 (L_7_mux000048)
+     FDS:D                     0.308          L_7
+    ----------------------------------------
+    Total                      8.451ns (5.046ns logic, 3.405ns route)
+                                       (59.7% logic, 40.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 17 / 9
+-------------------------------------------------------------------------
+Offset:              6.303ns (Levels of Logic = 3)
+  Source:            TX/TxD_state_FSM_FFd3 (FF)
+  Destination:       TxD (PAD)
+  Source Clock:      clk rising
+
+  Data Path: TX/TxD_state_FSM_FFd3 to TxD
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               9   0.591   0.995  TX/TxD_state_FSM_FFd3 (TX/TxD_state_FSM_FFd3)
+     LUT4:I0->O            1   0.704   0.000  TX/TxD2 (TX/TxD1)
+     MUXF5:I0->O           1   0.321   0.420  TX/TxD_f5 (TxD_OBUF)
+     OBUF:I->O                 3.272          TxD_OBUF (TxD)
+    ----------------------------------------
+    Total                      6.303ns (4.888ns logic, 1.415ns route)
+                                       (77.6% logic, 22.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 12.57 secs
+ 
+--> 
+
+Total memory usage is 283536 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   43 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
+

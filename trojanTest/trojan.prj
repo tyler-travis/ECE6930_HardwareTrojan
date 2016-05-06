@@ -1,0 +1,3 @@
+vhdl work "DES/des56.vhd"
+verilog work "async.v"
+verilog work "trojan.v"
